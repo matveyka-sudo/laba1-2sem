@@ -7,7 +7,8 @@ from src.proc import check
 def main() -> None:
     '''Главная функция, точка входа в программу'''
     sources=[
-
+        Source(),
+        Source2(),
         Source1("12.txt")
     ]
     result=check(sources)
