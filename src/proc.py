@@ -1,5 +1,5 @@
 import logging
-from typing import List, Any
+from typing import Any
 from src.contract import Contract
 from src.logg import LOGGING_CONFIG
 logging.config.dictConfig(LOGGING_CONFIG)
@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 
-def check(lst: List[Any]) -> list[Any] | list:
+def check(lst: list[Any]) -> list[Any] | list:
     '''Функция возвращает список из задачь, проверяет классы на наличие метода генерации'''
     lst2:list[Any]=[]
     for item in lst:
